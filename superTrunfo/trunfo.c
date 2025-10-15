@@ -43,7 +43,7 @@ int main()
     printf("Quantos pontos turisticos tem ? \n");
     scanf("%d", &turisticos);
 
-    printf("Carta do %s\nEstado:%s\nCódigo:%s%s\nNome da cidade:%s\nPopulação:%d\nÁrea:%f KM².\nPIB:%f Bilhões de Reais.\nNúmero de Pontos Turisticos:%d pontos.\n", nome, estado, estado, codigo, cidade, populacao, area, pib, turisticos);
+    printf("Carta do %s\nEstado:%s\nCódigo:%s%s\nNome da cidade:%s\nPopulação:%d\nÁrea:%.2f KM².\nPIB:%.2f Bilhões de Reais.\nNúmero de Pontos Turisticos:%d pontos.\n", nome, estado, estado, codigo, cidade, populacao, area, pib, turisticos);
 
     /*CARTA 2 */
     printf("Digite seu nome! \n");
@@ -74,5 +74,5 @@ int main()
     printf("Quantos pontos turisticos tem ? \n");
     scanf("%d", &turisticos2);
 
-    printf("Carta do %s\nEstado: %s\nCódigo: %s%s\nNome da cidade: %s\nPopulação: %d\nÁrea: %fKm²\nPIB: %f Bilhões de Reais.\nNúmeros de Pontos Turisticos: %d pontos.", nome2, estado2, estado2, codigo2, cidade2, populacao2, area2, pib2, turisticos2);
+    printf("Carta do %s\nEstado: %s\nCódigo: %s%s\nNome da cidade: %s\nPopulação: %d\nÁrea: %.2fKm²\nPIB: %.2f Bilhões de Reais.\nNúmeros de Pontos Turisticos: %d pontos.", nome2, estado2, estado2, codigo2, cidade2, populacao2, area2, pib2, turisticos2);
 }
