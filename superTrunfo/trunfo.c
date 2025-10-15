@@ -18,17 +18,20 @@ int main()
     scanf("%s", nome);
 
     printf("%s Responda as Questões a Seguir! \n", nome);
-    printf("Qual seu estado ? \n");
+    printf("Escolha uma letra de um estado:\nA = RIO DE JANEIRO\nB = BRSÍLIA\nC = CEARÁ\nD = BAHIA\nE = SÃO PAULO\nF = MATO GROSSO\nG = GOIÁS\nH = ÁCRE  \n");
     scanf("%s", estado);
 
-    printf("Qual a sua cidade? \n");
-    scanf("%s", cidade);
+    while (getchar() != '\n' && getchar() != EOF)
+        ; // Limpar o buffer do teclado.
+
+    printf("Qual a sua cidade?\n");
+    fgets(cidade, sizeof(cidade), stdin);
 
     printf("Escolha um numero de 01 a 04: \n");
     scanf("%s", codigo);
 
     printf("Numero de habitantes da sua cidade? \n");
-    scanf("%d", &populacao);
+    scanf(" %d", &populacao);
     getchar();
 
     printf("Qual a area da sua cidade ? \n");
@@ -40,18 +43,21 @@ int main()
     printf("Quantos pontos turisticos tem ? \n");
     scanf("%d", &turisticos);
 
-    printf("Carta do %s\nEstado:%s\nCodigo:%s%s\nCidade:%s\nPopulação:%d Mil habitantes!\nÁrea:%f KM².\nPIB:%f Milhoes!\nPontos Turisticos:%d pontos.\n", nome, estado, estado, codigo, cidade, populacao, area, pib, turisticos);
+    printf("Carta do %s\nEstado:%s\nCódigo:%s%s\nNome da cidade:%s\nPopulação:%d\nÁrea:%f KM².\nPIB:%f Bilhões de Reais.\nNúmero de Pontos Turisticos:%d pontos.\n", nome, estado, estado, codigo, cidade, populacao, area, pib, turisticos);
 
     /*CARTA 2 */
     printf("Digite seu nome! \n");
     scanf("%s", nome2);
 
     printf("%s Responda as Questões a Seguir! \n", nome2);
-    printf("Qual seu estado ? \n");
+    printf("Escolha uma letra de um estado:\nA = RIO DE JANEIRO\nB = BRSÍLIA\nC = CEARÁ\nD = BAHIA\nE = SÃO PAULO\nF = MATO GROSSO\nG = GOIÁS\nH = ÁCRE  \n");
     scanf("%s", estado2);
 
+    while (getchar() != '\n' && getchar() != EOF)
+        ; // Limpar o buffer do teclado.
+
     printf("Qual a sua cidade? \n");
-    scanf("%s", cidade2);
+    fgets(cidade2, sizeof(cidade2), stdin);
 
     printf("Escolha um numero de 01 a 04: \n");
     scanf("%s", codigo2);
@@ -68,5 +74,5 @@ int main()
     printf("Quantos pontos turisticos tem ? \n");
     scanf("%d", &turisticos2);
 
-    printf("Carta do %s\nEstado: %s\nCodigo: %s%s\nCidade: %s\nPopulação: %d Mil Habitantes\nÁrea: %fKm²\nPIB: %f Milhoes\nPontos Turisticos: %d pontos.", nome2, estado2, estado2, codigo2, cidade2, populacao2, area2, pib2, turisticos2);
+    printf("Carta do %s\nEstado: %s\nCódigo: %s%s\nNome da cidade: %s\nPopulação: %d\nÁrea: %fKm²\nPIB: %f Bilhões de Reais.\nNúmeros de Pontos Turisticos: %d pontos.", nome2, estado2, estado2, codigo2, cidade2, populacao2, area2, pib2, turisticos2);
 }
